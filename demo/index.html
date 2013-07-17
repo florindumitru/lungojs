@@ -45,11 +45,11 @@
              and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image">
 
     <!-- Main Stylesheet -->
-    <link rel="stylesheet" href="http://lungo.tapquo.com/demo/components/lungo/lungo.css">
-    <link rel="stylesheet" href="http://lungo.tapquo.com/demo/components/lungo/lungo.theme.css">
-    <link rel="stylesheet" href="http://lungo.tapquo.com/demo/components/lungo/lungo.icon.css">
+    <link rel="stylesheet" href="components/lungo/lungo.css">
+    <link rel="stylesheet" href="components/lungo/lungo.theme.css">
+    <link rel="stylesheet" href="components/lungo/lungo.icon.css">
     <!-- App Stylesheet -->
-    <link rel="stylesheet" href="http://lungo.tapquo.com/demo/static/stylesheets/app.css">
+    <link rel="stylesheet" href="static/stylesheets/app.css">
 </head>
 
 <body>
@@ -58,7 +58,7 @@
             <nav>
                 <a href="index.html#" data-view-aside="features" data-icon="menu"></a>
             </nav>
-            <img src="http://lungo.tapquo.com/demo/static/images/logo.png" class="title centered">
+            <img src="static/images/logo.png" class="title centered">
             <nav class="on-right">
                 <a href="index.html#"  ><abbr class="text tiny ">v2.2</abbr></a>
             </nav>
@@ -123,20 +123,20 @@
     </section>
 
     <!-- Lungo dependencies -->
-    <script src="http://lungo.tapquo.com/demo/components/quojs/quo.js"></script>
-    <script src="http://lungo.tapquo.com/demo/components/lungo/lungo.js"></script>
+    <script src="components/quojs/quo.js"></script>
+    <script src="components/lungo/lungo.js"></script>
     <!-- LungoJS - Sandbox App -->
     <script>
         Lungo.init({
             name: 'Kitchen Sink',
             version: '2.1.0222',
             resources: [
-                'static/asides/features.html',
-                'static/asides/right.html',
-                'static/sections/form.html'],
+                'static/asides/features.html--allow-file-access-from-files',
+                'static/asides/right.html--allow-file-access-from-files',
+                'static/sections/form.html--allow-file-access-from-files'],
             history: false
         });
     </script>
-    <script src="http://lungo.tapquo.com/demo/static/javascripts/app.js"></script>
+    <script src="static/javascripts/app.js"></script>
 </body>
 </html>
